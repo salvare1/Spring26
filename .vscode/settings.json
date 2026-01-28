@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "SSW 567 Software Testing"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
