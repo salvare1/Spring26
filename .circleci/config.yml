@@ -1,9 +1,16 @@
-language: python
-python:
-  - "3.10"
+version: 2.1
 
-install:
-  - pip install -r requirements.txt || true
+jobs:
+  test:
+    docker:
+      - image: cimg/python:3.10
+    steps:
+      - checkout
+      - run: pip install -r requirements.txt || true
+      - run: python -m unittest discover
 
-script:
-  - python -m unittest discover
+workflows:
+  version: 2
+  test-workflow:
+    jobs:
+      - test
