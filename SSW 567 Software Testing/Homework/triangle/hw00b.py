@@ -1,4 +1,14 @@
+"""
+Module Docstring for SSW 567 Software Testing.Homework.hw00b aka triangle classification function
+"""
 def classify_triangle(a, b, c):
+    """
+    Docstring for classify_triangle
+    
+    :param a: Side a
+    :param b: Side b
+    :param c: Side c
+    """
     sides = sorted([a, b, c])
 
     if sides[0] <= 0 or sides[0] + sides[1] <= sides[2]:
